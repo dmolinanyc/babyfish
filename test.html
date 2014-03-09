@@ -1,0 +1,14 @@
+This test willl keep randomly selecting javascript number between 1-20
+<br>
+<script>
+var randomnumbers = new Array();
+var howmany = 0;
+while (randomnumbers.length < 20) {
+	var rn = Math.floor((Math.random()*20)+1);
+	if ( randomnumbers.indexOf(rn) < 0 ) {
+		randomnumbers.push(rn);
+	}
+	howmany += 1; 
+}
+document.write(randomnumbers + ' in ' +  howmany + ' attempts');
+</script>
