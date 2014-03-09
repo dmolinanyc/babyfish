@@ -1,6 +1,7 @@
 define(["jquery"], function($) {
 	$(function() {
-		var gamesocket = new WebSocket("ws://ec2-54-80-138-162.compute-1.amazonaws.com:8080");
+		//var gamesocket = new WebSocket("ws://ec2-54-80-138-162.compute-1.amazonaws.com:8080");
+		var gamesocket = new WebSocket("ws://ec2-54-186-77-206.us-west-2.compute.amazonaws.com:8080");
 		gamesocket.onopen = function(evt) { console.log('open'); };
 		gamesocket.onclose = function(evt) {  console.log('close'); };
 		gamesocket.onerror = function(evt) { console.log("error"); };
