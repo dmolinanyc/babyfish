@@ -10,7 +10,11 @@ How I installed guess game on AWS
 
 3) npm install ws, requirejs
 
-4) opened screen and ran 'nodejs node_server.js'
+4) modify guess_game_ui.js path:
 
-5) started nginx replaced the default root folder config with guess_game  
+  var gamesocket = new WebSocket("ws://YOURIP_OR_WEHADDRESS_HERE:8080");
+
+5) opened screen and ran 'nodejs node_server.js'
+
+6) started nginx replaced the default root folder config with guess_game  
 
